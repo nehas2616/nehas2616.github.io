@@ -21,7 +21,8 @@
             }
             
             img.prod-img {
-                width: 150px;
+                max-width: 150px;
+                max-height: 150px;
             }
             .title {
                 font-weight: bold;
@@ -66,18 +67,15 @@
             div.header {
                 margin-bottom: 10px;
             }
-		</style>
-        <script>
-            function updateItemNumbers() {
-                var index = 1043000;
-                for(item of document.getElementsByTagName("itemnumber")) {
-                    index++
-                    item.innerHTML = "Item #: " + index
-                }
+            div.image-div {
+                height: 150px;
+                width: 150px;
+                border: 1px solid #dbdbdb;
+                align-self: center;
             }
-        </script>
+		</style>
 	</head>
-	<body onload="updateItemNumbers()">
+	<body>
 		<div class="header">
             <h1>Diwali Collection</h1>
             Kindly contact <b>Neha</b> on <a href="tel:6513639100">651 363 9100</a>
@@ -85,8 +83,7 @@
         <section>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_earings.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">22k Gold Stud Hallmarked Earrings</div>
@@ -94,14 +91,12 @@
                         22k Gold Hallmarked Cubic Zirconia Stud Earrings.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_coins.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">10 gm Silver Coin</div>
@@ -109,14 +104,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 10 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $20.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_coins.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">5 gm Silver Coin</div>
@@ -124,44 +117,25 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_idols.jpeg">
                 </div>
                 <div class="content-div">
-                    <div class="title">Ganeshji Silver Idol</div>
+                    <div class="title">Single God Idol</div>
                     <div class="description">
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
-                </div>
-                <div class="content-div">
-                    <div class="title">Lakshmiji Silver Idol</div>
-                    <div class="description">
-                        Beautiful crafted silver coin with 99.9% purity.
-                        <p>Weight: 5 gram</p>
-                    </div>
-                    <itemnumber></itemnumber>
-                    <div class="price">Price: $10.00</div>
-                </div>
-            </jewelitem>
-            <jewelitem>
-                <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_idol_combo.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Ganeshji and Lakshmiji Combined Pure Silver Idol</div>
@@ -169,14 +143,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_laxmi_ganesh.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Antique exclusive Pure Silver Ganeshji Idol</div>
@@ -184,14 +156,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_ghanti.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Bell(Ghanti)</div>
@@ -199,14 +169,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_diya.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Diya Small</div>
@@ -214,14 +182,12 @@
                         Varieties of small diya in different designs.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_diya-2.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Diya small stand type</div>
@@ -229,14 +195,12 @@
                         Beautiful design standing diya.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_satiya.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Incense(Agarbatti) Stick Stand</div>
@@ -244,14 +208,12 @@
                         Different Designs for Incense Stick stand.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_small_box.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Kumkum box closed design</div>
@@ -259,14 +221,12 @@
                         Simple Silver kumkum box with lid.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_chatari.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Chattar(Chatri) for Throne/ Singhasan </div>
@@ -274,14 +234,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_bichudi.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Oxidized Pure Silver Toe rings</div>
@@ -289,14 +247,12 @@
                         Various designs available.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_payjev.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Anklets for kids</div>
@@ -304,14 +260,12 @@
                         Designs with bells(Ghungaru) and less Ghungaru available.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_braclet.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Sterling Silver Bracelets for Women</div>
@@ -319,29 +273,12 @@
                         Elegant Silver Bracelets available for Women.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
-                </div>
-                <div class="content-div">
-                    <div class="title">Sai Baba Silver Idol</div>
-                    <div class="description">
-                        Beautiful crafted silver coin with 99.9% purity.
-                        <p>Weight: 5 gram</p>
-                    </div>
-                    <itemnumber></itemnumber>
-                    <div class="price">Price: $10.00</div>
-                </div>
-            </jewelitem>
-            <jewelitem>
-                <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_plate.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Plates small</div>
@@ -349,14 +286,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_bowl.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Bowl</div>
@@ -364,14 +299,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_spoon.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Spoon</div>
@@ -379,14 +312,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_paduka.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Silver Paduka</div>
@@ -394,14 +325,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_glass.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Pure Silver Glass</div>
@@ -409,14 +338,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_lota.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Pure Silver Lota and Kalash </div>
@@ -424,14 +351,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_panchamrat.jpeg">
                 </div>
                 <div class="content-div">
                     <div class="title">Panchamrut/ Panakaam Pure silver glass with spoon</div>
@@ -439,14 +364,12 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
             <jewelitem>
                 <div class="image-div">
-                    <img class="prod-img" src="res/coin-1.jpg">
-                    <div><a href="#">See more pictures</a></div>
+                    <img class="prod-img" loading="lazy" src="res/item_img_">
                 </div>
                 <div class="content-div">
                     <div class="title">Sterling Silver Chain Pendant Set with Earrings</div>
@@ -454,7 +377,6 @@
                         Beautiful crafted silver coin with 99.9% purity.
                         <p>Weight: 5 gram</p>
                     </div>
-                    <itemnumber></itemnumber>
                     <div class="price">Price: $10.00</div>
                 </div>
             </jewelitem>
