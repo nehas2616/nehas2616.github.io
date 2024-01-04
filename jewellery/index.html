@@ -25,7 +25,7 @@
 		<style>
 			body {
                 margin: 10px;
-                margin-top: 0px;
+                margin-bottom: 50px;
 				text-align: center;
                 font-family: Arial, Helvetica, sans-serif;
 			}
@@ -33,7 +33,7 @@
             @media (min-width: 900px) {
                 body {
                     margin: 10px 15%;
-                    margin-top: 0px;
+                    margin-bottom: 50px;
                 }
             }
             
@@ -78,12 +78,7 @@
             }
 
             div.header {
-                position: sticky;
-                top: 0;
-                z-index: 999;
-                background: white;
-                padding: 10px 0;
-
+                margin-bottom: 10px;
             }
             div.image-div {
                 height: 150px;
@@ -95,14 +90,24 @@
                 display: inline-block;
                 height: 100%;
             }
-            .header a {
+            div.footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                background: #06f62e;
+                padding: 10px 0;
+                border-top: 1px solid rgb(197, 197, 197);
+                width: 100%;
+            }
+            .footer a {
                 display: inline-block;
             }
 		</style>
 	</head>
 	<body>
-		<div class="header">
-            Kindly <a href="https://wa.me/16513639100">Chat on WhatsApp</a> for further inquiry.
+        <div class="header">
+            <h1>Welcome to Jewellery Collection</h1>
         </div>
         <div class="tab-container">
             <div class="tab-content">
@@ -410,6 +415,9 @@
             </jewelitem>
         </section>
             </div>
+        </div>
+        <div class="footer">
+            Kindly <a href="https://wa.me/16513639100">Chat on WhatsApp</a> for further inquiry.
         </div>
 	</body>
 </html>
